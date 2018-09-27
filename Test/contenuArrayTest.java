@@ -7,15 +7,15 @@ import java.util.ArrayList;
 public class contenuArrayTest {
     ArrayList<FormGeometric> form = new ArrayList();
     @Before
-    public void before() {
+    public void before()  throws limitDepasse {
 
-        form.add(new Rectangle(5, 9));
-        form.add(new Rectangle(2, 5));
-        form.add(new Cercle(2));
-        form.add(new Cercle(5));
-        form.add(new Cercle(5));
-        form.add(new Carre(2));
-        form.add(new Carre(3));
+        form.add(new Rectangle(5,32,32,9));
+        form.add(new Rectangle(2,23,32, 5));
+        form.add(new Cercle(2,23,32));
+        form.add(new Cercle(5,23,23));
+        form.add(new Cercle(5,23,23));
+        form.add(new Carre(2,23,23));
+        form.add(new Carre(3,23,23));
     }
     @Test
     public void testArrayContenu() {

@@ -1,9 +1,9 @@
 public class Carre extends FormGeometric
 {
 
-    public Carre(int longueur)
+    public Carre(int longueur,int axeX, int axeY) throws limitDepasse
     {
-        super(longueur);
+        super(longueur,axeX,axeY);
     }
 
     @Override

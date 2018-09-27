@@ -16,6 +16,6 @@ public class Outils {
         Properties props = new Properties();
         props.put("user", "root"); props.put("password", ""); props.put("charSet", "UTF‐8");
         return DriverManager.getConnection("jdbc:mysql://localhost:3306/" + nomBase, props);
-      //  return DriverManager.getConnection("jdbc:mysql://localhost:8005/bddtest?"+"user=root&password=");
+      //  return DriverManager.getConnection("jdbc:mysql://localhost:8005/bddtest?user=root&password=");
     } // connect
 } // Outils
