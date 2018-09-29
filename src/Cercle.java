@@ -1,10 +1,15 @@
-public class Cercle extends FormGeometric
+
+
+public class Cercle extends FormGeometric implements Drawable
 {
+
 
     public Cercle(int longueur,int axeX, int axeY) throws limitDepasse
     {
         super(longueur,axeX,axeY);
     }
+
+    public void draw(){};
 
     @Override
     public double getSurface() {

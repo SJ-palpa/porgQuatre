@@ -3,6 +3,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 
@@ -22,6 +23,22 @@ public class Main {
             System.out.println(form.get(i).getSurface());
         }
         System.out.println(((Cercle)form.get(3)).division(0.0,7.0));
+
+
+
+        // List personne
+
+
+        List<Personne> l = new ArrayList<>();
+        l.add(new Personne(1,"jacque"));
+        l.add(new Personne(2,"robert"));
+        l.add(new Personne(3,"henri"));
+        l.add(new Personne(4,"gui"));
+        l.add(new Personne(5,"martial"));
+        l.add(new Personne(6,"garri"));
+
+
+
 
 
 
